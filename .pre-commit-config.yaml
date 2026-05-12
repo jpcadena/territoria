@@ -2,7 +2,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 default_install_hook_types: [pre-commit, post-checkout, post-merge, post-rewrite]
 default_language_version:
-  python: python3.12
+  python: python3.14
 
 repos:
   - repo: https://github.com/astral-sh/uv-pre-commit
