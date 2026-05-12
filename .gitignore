@@ -209,3 +209,5 @@ __marimo__/
 logs
 .antigravity
 .streamlit/secrets.toml
+.streamlit/
+secrets.toml
