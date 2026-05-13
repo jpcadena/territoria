@@ -93,18 +93,18 @@ class Visualizer:
         )
 
     @staticmethod
-    def plot_trends(df: pd.DataFrame) -> go.Figure:
+    def plot_trends(dataframe: pd.DataFrame) -> go.Figure:
         """
         Generates a line chart for temperature trends.
 
         Args:
-            df (pd.DataFrame): The source dataframe.
+            dataframe (pd.DataFrame): The source dataframe.
 
         Returns:
             go.Figure: A Plotly Express line figure.
         """
         figure: go.Figure = px.line(
-            df.sort_values("FECHA"),
+            dataframe.sort_values("FECHA"),
             x="FECHA",
             y="TEMPERATURA",
             color="CULTIVO",
